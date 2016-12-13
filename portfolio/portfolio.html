@@ -1,0 +1,243 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<base target="_blank">
+
+	<title>My Udacity Portfolio</title>
+
+	<link rel="stylesheet" href="http://weloveiconfonts.com/api/?family=zocial" />
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/responsive.css">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+</head>
+<body>
+	<!--container-->
+	<div class="container">
+		<!-- header -->
+		<header class="row">
+			<section class="col-xs-4 col-sm-4 col-md-6">
+				<img src="img/logo-wordmark.svg" alt="Udacity's logo" class="img-responsive logo">
+			</section>
+			<section class="col-xs-8 col-sm-8 col-md-6">
+				<h1 class="header-text text-right text-uppercase">Basavaraj C</h1>
+				<h2 class="header-text text-right text-uppercase">Full stack developer</h2>
+			</section>
+		</header>
+
+		<!--TODO Add navigation menu-->
+		<!--nav-->
+		<!--
+		<nav class="navbar navbar-inverse">
+			<div class="container-fluid">
+				<ul class="nav navbar-nav">
+					<li class="active"><a href="#">Home</a></li>
+					<li class="dropdown">
+						<a class="dropdown-toggle" data-toggle="dropdown" href="#">Page 1 <span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li><a href="#">Page 1-1</a></li>
+							<li><a href="#">Page 1-2</a></li>
+							<li><a href="#">Page 1-3</a></li>
+						</ul>
+					</li>
+					<li><a href="#">Page 2</a></li>
+					<li><a href="#">Page 3</a></li>
+				</ul>
+			</div>
+		</nav>
+		-->
+
+		<!--seperator-->
+		<hr>
+
+		<!-- main content-->
+		<article class="row profile-image" data-toggle="modal" data-target="#aboutMe">
+			<section class="col-xs-12 col-sm-12 col-md-12">
+				<img src="img/nature.jpg" alt="About Me" class="clickable img-responsive">
+			</section>
+		</article>
+
+		<article class="row">
+			<section class="col-xs-12 col-sm-12 col-md-12">
+				<h2>Featured Trips</h2>
+			</section>
+		</article>
+
+		<article class="row text-center">
+			<section class="col-xs-6 col-sm-4 col-md-4">
+				<picture>
+					<source media="(min-width: 750px)" srcset="img/photo1-l.jpg 2x, img/photo1-m.jpg"  alt="At Kodai Garden" class="clickable img-responsive" data-toggle="modal" data-target="#bryantPark"/>
+					<source media="(min-width: 500px)" srcset="img/photo1-s.jpg"  alt="At Kodai Garden" class="clickable img-responsive" data-toggle="modal" data-target="#bryantPark"/>
+					<img src="img/photo1-m.jpg" alt="At Kodai Garden" class="clickable img-responsive" data-toggle="modal" data-target="#bryantPark">
+				</picture>
+				<h3>Kodai Garden</h3>
+				<p>Pic taken at Bryant Park</p>
+			</section>
+			<section class="col-xs-6 col-sm-4 col-md-4">
+				<picture>
+					<source media="(min-width: 750px)" srcset="img/photo2-l.jpg 2x, img/photo2-m.jpg"  alt="At Coaker's Walk" class="clickable img-responsive" data-toggle="modal" data-target="#coakersWalk"/>
+					<source media="(min-width: 500px)" srcset="img/photo2-s.jpg"  alt="At Coaker's Walk" class="clickable img-responsive" data-toggle="modal" data-target="#coakersWalk"/>
+					<img src="img/photo2-m.jpg" alt="At Coaker's Walk" class="clickable img-responsive" data-toggle="modal" data-target="#coakersWalk">
+				</picture>
+				<h3>Coaker's Walk</h3>
+				<p>Pic taken at Coaker's Walk</p>
+			</section>
+			<section class="col-xs-6 col-sm-4 col-md-4">
+				<picture>
+					<source media="(min-width: 750px)" srcset="img/photo3-l.jpg 2x, img/photo3-m.jpg"  alt="Trying my hand at Shooting" class="clickable img-responsive" data-toggle="modal" data-target="#silentValley"/>
+					<source media="(min-width: 500px)" srcset="img/photo3-s.jpg"  alt="Trying my hand at Shooting" class="clickable img-responsive" data-toggle="modal" data-target="#silentValley"/>
+					<img src="img/photo3-m.jpg" alt="Trying my hand at Shooting" class="clickable img-responsive" data-toggle="modal" data-target="#silentValley">
+				</picture>
+				<h3>Guna's Cave</h3>
+				<p>Pic taken at Guna's cave</p>
+			</section>
+			<section class="col-xs-6 col-sm-4 col-md-4">
+				<picture>
+					<source media="(min-width: 750px)" srcset="img/photo4-l.jpg 2x, img/photo4-m.jpg"  alt="At OOty Lake" class="clickable img-responsive" data-toggle="modal" data-target="#ootyLake"/>
+					<source media="(min-width: 500px)" srcset="img/photo4-s.jpg" alt="At OOty Lake" class="clickable img-responsive" data-toggle="modal" data-target="#ootyLake"/>
+					<img src="img/photo4-m.jpg" alt="At OOty Lake" class="clickable img-responsive" data-toggle="modal" data-target="#ootyLake">
+				</picture>
+				<h3>Ooty</h3>
+				<p>Pic taken at Ooty Lake</p>
+			</section>
+			<section class="col-xs-6 col-sm-4 col-md-4">
+				<picture>
+					<source media="(min-width: 750px)" srcset="img/photo6-l.jpg 2x, img/photo6-m.jpg"  alt="At Murudeshwar Beach" class="clickable img-responsive" data-toggle="modal" data-target="#murudeshwarBeach"/>
+					<source media="(min-width: 500px)" srcset="img/photo6-s.jpg"  alt="At Murudeshwar Beach" class="clickable img-responsive" data-toggle="modal" data-target="#murudeshwarBeach"/>
+					<img src="img/photo6-m.jpg" alt="At Murudeshwar Beach" class="clickable img-responsive" data-toggle="modal" data-target="#murudeshwarBeach">
+				</picture>
+				<h3>Murudeshwar Beach</h3>
+				<p>Pic taken at Murudeshwar beach</p>
+			</section>
+		</article>
+
+		<!--seperator-->
+		<hr>
+		<hr>
+
+		<!-- footer -->
+		<footer class="row social">
+			<section class="col-xs-12 col-sm-12 col-md-12">
+				<a href="https://www.facebook.com/basavaraj.tandur" class="zocial-facebook">Facebook</a>
+				<a href="https://twitter.com/bassu_ct" class="zocial-twitter">Twitter</a>
+				<a href="https://plus.google.com/118354107618650410454" class="zocial-googleplus">Google+</a>
+			</section>
+		</footer>
+	</div>
+
+	<!-- Modal -->
+	<div class="modal fade" id="aboutMe" tabindex="-1" role="dialog" aria-labelledby="aboutMeLabel">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h4 class="modal-title text-center" id="aboutMeLabel">About Me</h4>
+				</div>
+				<div class="modal-body">
+					<img src="img/photo1-s.jpg" alt="About Me" class="modal-image" style="display : block;margin : auto;">
+					<p class="lead">I am Basavaraj C, a Front end Ninja! I have around 6 years of experience in software development. I worked as Android Developer for first two years of career, later I moved to Web Development. Currently I have enrolled for Udacity's Full Stack Web Developer programme. I am very excited about this new adventure in my life!</p>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">Ok</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Modal -->
+	<div class="modal fade" id="bryantPark" tabindex="-1" role="dialog" aria-labelledby="bryantParkLabel">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h4 class="modal-title text-center" id="bryantParkLabel">Bryant Park</h4>
+				</div>
+				<div class="modal-body">
+					<img src="img/photo1-s.jpg" alt="Photo in Bryant Park" class="modal-image">
+					<p class="lead">This park is located in Kodaikanal, a popular hill station in South India.The Bryant park was planned and built in 1908 by a forest officer from Madurai, H.D.Bryant, and named after him. With 325 species of trees, shrubs and cacti, the park is a rainbow of stunning flowers during the peak season. A large section is dedicated to nearly 740 varieties of roses. There is an 1857 Eucalyptus tree and a Bodhi tree which adds a religious significance to the park. Ornamental plants are cultivated in a nursery for sale. The park organizes horticultural exhibits and flower shows every summer, to coincide with the peak season. The entrance fee to the park is nominal, and it is open all year.</p>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">Ok</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Modal -->
+	<div class="modal fade" id="coakersWalk" tabindex="-1" role="dialog" aria-labelledby="coakersWalkLabel">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h4 class="modal-title text-center" id="coakersWalkLabel">Coakers Walk</h4>
+				</div>
+				<div class="modal-body">
+					<img src="img/photo2-s.jpg" alt="At Coaker's Walk" class="modal-image">
+					<p class="lead">Coakers Walk is a 1-kilometre (3,300 ft) paved pedestrian path running along the edge of steep slopes on the southern side of Kodai. The walk, winding around Mount Nebo, starts in front of the Van Allen hospital, running parallel to the Van Allen Hospital Road and joins the main road beside St.Peter's Church, providing a stunning panoramic view of the plains. On a clear day one can view as far as Dolphin's Nose in the south, the valley of the Pambar River in the southeast, Periyakulam town and even the city of Madurai.</p>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">Ok</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Modal -->
+	<div class="modal fade" id="silentValley" tabindex="-1" role="dialog" aria-labelledby="silentValleyLabel">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h4 class="modal-title text-center" id="silentValleyLabel">Guna Caves</h4>
+				</div>
+				<div class="modal-body">
+					<img src="img/photo3-s.jpg" alt="At Guna's Cave" class="modal-image">
+					<p class="lead">Guna caves are deep bat-infested chambers between the three gigantic boulders that are the Pillar Rocks. The deep narrow ravines of the caves are now closed to public due to the tragic deaths of twelve youths there.These dangerous caves are highly protected now, and tourists can see sections of the cave system from afar.</p>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">Ok</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Modal -->
+	<div class="modal fade" id="ootyLake" tabindex="-1" role="dialog" aria-labelledby="ootyLakeLabel">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h4 class="modal-title text-center" id="ootyLakeLabel">Ooty Lake</h4>
+				</div>
+				<div class="modal-body">
+					<img src="img/photo4-s.jpg" alt="At OOty Lake" class="modal-image">
+					<p class="lead">Ooty lake is located in Ooty in the Nilgiris district, Tamil Nadu, India. It covers an area of 65 acres. The Boat house situated by the lake, which offers boating facilities to tourists, is a major tourist attraction in Ooty. The lake was originally intended to be used for fishing with ferries being used to travel across the lake. It gradually shrunk from its original size giving place to the current bus stand race course, and the lake park. </p>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">Ok</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Modal -->
+	<div class="modal fade" id="murudeshwarBeach" tabindex="-1" role="dialog" aria-labelledby="murudeshwarBeachLabel">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h4 class="modal-title text-center" id="murudeshwarBeachLabel">Murudeshwar Beach</h4>
+				</div>
+				<div class="modal-body">
+					<img src="img/photo6-s.jpg"  alt="At Murudeshwar Beach" class="modal-image">
+					<p class="lead">Murdeshwara is a town in Bhatkal Taluk of Uttara Kannada district in the state of Karnataka, India. Murudeshwara is another name of the Hindu god Shiva. Famous for the world's second-tallest Shiva statue, the town lies on the coast of the Arabian Sea and is also famous for the Murdeshwar Temple. </p>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">Ok</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
