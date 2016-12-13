@@ -5,24 +5,17 @@ I have designed portfolio site to show photos of my favorite trips so far.
 
 <h2>Structure of project</h2>
 
-Portfolio
-│   portfolio.html
-│
-└───css
-│   │   bootstrap.min.css
-│   │   main.css
-|   |   responsive
-│   
-│___img   
-│   |    
-│   | All images  
-│       
-│   
-└───js
-    │   bootstrap.min.js
-    │  
-
-
+ Portfolio
+ -portfolio.html
+  --CSS
+   -bootstrap.min.css
+   -main.css
+   -responsive
+  --IMG
+    -All images
+  --JS
+    -bootstrap.min.js
+    
 The project uses Bootstrap library to achieve responsiveness.
 
 <h2>How to Launch?</h2>
