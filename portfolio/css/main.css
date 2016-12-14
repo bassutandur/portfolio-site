@@ -14,20 +14,16 @@ p {
 header {
 	background: linear-gradient(to right, rgba(208,228,247,1) 0%,rgba(115,177,231,1) 24%,rgba(10,119,213,1) 50%,rgba(83,159,225,1) 79%,rgba(135,188,234,1) 100%);
 	margin-top: 10px;
+	border-bottom: 5px solid #7d97ad;
 }
 
 footer {
 	text-align: center;
-	margin-bottom: 10px;
+	border-top: 5px solid #7d97ad;
 }
 
 .logo {
 	width: 300px;
-}
-
-hr {
-	height: 5px;
-	background-color: #7d97ad;
 }
 
 [class*="zocial-"]:before {
@@ -51,6 +47,10 @@ a {
 a:hover {
 	color: #3d85c6;
 	text-decoration: underline;
+}
+
+.social {
+	padding-top: 10px;
 }
 
 .social a {
